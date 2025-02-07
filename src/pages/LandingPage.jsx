@@ -16,7 +16,7 @@ export default function LandingPage() {
                 <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                     <div className="flex items-center space-x-8">
                         <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u2en3H0Xb4vg66I9kZXJN8rMI7cwWM.png"
+                            src={SkbLogo}
                             alt="SKB Homes Logo"
                             width={120}
                             height={40}

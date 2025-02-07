@@ -7,3 +7,4 @@ export const bookApartment = (bookingData) => axios.post(`${API_URL}/bookings/bo
 export const adminRegisterApartment = ()=> axios.post(`${API_URL}/apartments/register`);
 export const getApartmentsByType = (type) => axios.get(`${API_URL}/filter/type`);
 export const getApartmentsByLocation = (location) => axios.get(`${API_URL}/filter/location`);
+export const getApartmentByStatus = (status) => axios.get(`${API_URL}/filter/status`);

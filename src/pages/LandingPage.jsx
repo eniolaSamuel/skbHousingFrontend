@@ -8,7 +8,7 @@ import { Building2, CalendarDays, MapPin, Star, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Home() {
+export default function LandingPage() {
     return (
         <div className="min-h-screen bg-white">
             {/* Navigation */}

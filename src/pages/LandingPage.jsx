@@ -56,7 +56,7 @@ export default function LandingPage() {
                         </p>
                     </div>
 
-                    {/* Booking Form */}
+
                     <Card className="bg-white p-6 rounded-lg max-w-4xl">
                         <CardContent className="p-0">
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

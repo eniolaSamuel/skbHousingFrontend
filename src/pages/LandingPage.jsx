@@ -12,7 +12,7 @@ import SkbLogo from "./../assets/SkbLogo.svg"
 export default function LandingPage() {
     return (
         <div className="min-h-screen bg-white">
-
+            {/* Navigation */}
             <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
                 <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                     <div className="flex items-center space-x-8">

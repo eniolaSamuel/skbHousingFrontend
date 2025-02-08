@@ -45,7 +45,7 @@ export default function LandingPage() {
                 </div>
             </nav>
 
-            {/* Hero Section */}
+
             <section className="pt-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
                 <div className="container mx-auto px-4 py-20">
                     <div className="max-w-3xl">

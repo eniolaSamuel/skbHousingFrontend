@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation.jsx"
-import Home from "../components/Home"
-import Footer from "../components/Footer"
+import Home from "../components/Home.jsx"
+import Footer from "../components/Footer.jsx"
 
 function App() {
     return (

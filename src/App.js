@@ -9,8 +9,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<LandingPage/>} />
-                    <Route path="/apartments" component={<ApartmentList/>} />
-                    <Route path="/bookings" component={<BookingList/>} />
+                    <Route path="/apartments" element={<ApartmentList/>} />
+                    <Route path="/bookings" element={<BookingList/>} />
                 </Routes>
             </BrowserRouter>
     );

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage.jsx";
-import ApartmentList from "./components/ApartmentList.jsx";
 import BookingList from "./components/BookingList.jsx";
+import ApartmentList from "./components/ApartmentList.jsx";
 
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<LandingPage/>} />
-                    <Route path="/apartments" component={ApartmentList} />
-                    <Route path="/bookings" component={BookingList} />
+                    <Route path="/apartments" component={<ApartmentList/>} />
+                    <Route path="/bookings" component={<BookingList/>} />
                 </Routes>
             </BrowserRouter>
     );

@@ -1,67 +1,77 @@
-// Import your UI components here
-// import { Input } from "./ui/input"
-// import { Button } from "./ui/button"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-12">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div>
-                        <img
-                            src="/path-to-your-logo.svg" // Replace with actual path
-                            alt="SKB Homes Logo"
-                            className="h-8 w-auto mb-4 brightness-0 invert"
-                        />
-                        <p className="text-gray-400">Your trusted partner in finding the perfect apartment.</p>
-                    </div>
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#" className="text-gray-400 hover:text-white">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-400 hover:text-white">
-                                    Our Apartments
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-400 hover:text-white">
-                                    Locations
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-400 hover:text-white">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-                        <ul className="space-y-2 text-gray-400">
-                            <li>Lagos, Nigeria</li>
-                            <li>Phone: +234 123 456 7890</li>
-                            <li>Email: info@skbhomes.com</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-                        <div className="flex gap-2">
-                            <input
-                                type="email"
-                                placeholder="Your email"
-                                className="bg-gray-800 border-gray-700 rounded px-3 py-2 w-full"
-                            />
-                            <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Subscribe</button>
+        <footer className="bg-gray-800">
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+                        <div className="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                                <ul className="mt-4 space-y-4">
+                                    <li>
+                                        <Link to="/about" className="text-base text-gray-300 hover:text-white">
+                                            About
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/careers" className="text-base text-gray-300 hover:text-white">
+                                            Careers
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="mt-12 md:mt-0">
+                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                                <ul className="mt-4 space-y-4">
+                                    <li>
+                                        <Link to="/contact" className="text-base text-gray-300 hover:text-white">
+                                            Contact
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/faq" className="text-base text-gray-300 hover:text-white">
+                                            FAQ
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div className="mt-8 xl:mt-0">
+                        <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                            Subscribe to our newsletter
+                        </h3>
+                        <p className="mt-4 text-base text-gray-300">
+                            The latest news, articles, and resources, sent to your inbox weekly.
+                        </p>
+                        <form className="mt-4 sm:flex sm:max-w-md">
+                            <label htmlFor="email-address" className="sr-only">
+                                Email address
+                            </label>
+                            <input
+                                type="email"
+                                name="email-address"
+                                id="email-address"
+                                autoComplete="email"
+                                required
+                                className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
+                                placeholder="Enter your email"
+                            />
+                            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                                <button
+                                    type="submit"
+                                    className="w-full bg-red-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-red-500"
+                                >
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} SKB Homes. All rights reserved.</p>
+                <div className="mt-8 border-t border-gray-700 pt-8">
+                    <p className="text-base text-gray-400 xl:text-center">&copy; 2023 SKB Homes. All rights reserved.</p>
                 </div>
             </div>
         </footer>

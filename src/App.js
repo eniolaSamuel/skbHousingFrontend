@@ -1,17 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage.jsx";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Layout from "./components/Layout"
+import Home from "./components/Home"
+import ApartmentList from "./components/ApartmentList"
+import BookingList from "./components/BookingList"
 
 function App() {
     return (
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<LandingPage/>} />
-                </Routes>
-            </BrowserRouter>
-        </>
-    );
+        <Router>
+            <Layout>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/apartments" component={ApartmentList} />
+                    <Route path="/bookings" component={BookingList} />
+                </Switch>
+            </Layout>
+        </Router>
+    )
 }
 
-export default App;
+export default App
+

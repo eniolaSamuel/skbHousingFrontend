@@ -2,7 +2,7 @@ import Navigation from "../components/Navigation.jsx"
 import Home from "../components/Home.jsx"
 import Footer from "../components/Footer.jsx"
 
-function App() {
+function LandingPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
@@ -12,5 +12,5 @@ function App() {
     )
 }
 
-export default App
+export default LandingPage
 
